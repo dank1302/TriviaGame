@@ -25,7 +25,7 @@ var triviaQuestions = [{
 
 }];
 
-var gifArray = ['question1', 'question2', 'question3', 'question4', 'question5', 'question6'];
+
 var currentQuestion; var correctAnswer; var incorrectAnswer; var unanswered; var seconds; var time; var answered; var userSelect;
 var messages = {
 	correct: "Quack! Quack! Quack! That's right!",
