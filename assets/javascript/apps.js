@@ -111,12 +111,12 @@ function answerPage(){
 	if((userSelect == rightAnswerIndex) && (answered == true)){
 		correctAnswer++;
         $('#message').html(messages.correct);
-        $('#winPic').html('<img src="https://cdn-images-1.medium.com/max/853/1*VHZoMF2fOmlWEZEqNxvV8A.jpeg" alt="The mighty ducks team rejoicing" class="img-thumbnail" width = "400px">');
+        $('#winPic').html('<img src="https://cdn-images-1.medium.com/max/853/1*VHZoMF2fOmlWEZEqNxvV8A.jpeg" alt="The mighty ducks team rejoicing" class="img-thumbnail" height ="400px" width = "400px">');
 	} else if((userSelect != rightAnswerIndex) && (answered == true)){
         incorrectAnswer++;
 		$('#message').html(messages.incorrect);
         $('#correctedAnswer').html('The correct answer was: ' + rightAnswerText);
-        $('#nopePic').html('<img src="http://www.snakkle.com/wp-content/uploads/2012/10/brandon-adams-mighty-ducks-movie-1992-photo-GC.jpg" alt="ducks player with look of disdain" width = "400px">');
+        $('#nopePic').html('<img src="http://www.snakkle.com/wp-content/uploads/2012/10/brandon-adams-mighty-ducks-movie-1992-photo-GC.jpg" alt="ducks player with look of disdain" class="img-thumbnail" height ="400px" width = "400px">');
 	} else{
 		unanswered++;
 		$('#message').html(messages.endTime);
