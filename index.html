@@ -4,12 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <title>Mighty Ducks Trivia</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+		 crossorigin="anonymous">
+		 
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+        
+        <div class="jumbotron">
+                <h1 class="display-4">Mighty Ducks Trivia Game</h1>
+                <hr class="my-4">
+                <p class="lead">This is a trivia game based on the popular Mighty Ducks movie franchise. 
+                    <br>
+                                Once you click on the start button you wil be asked a question and given 
+                    <br>            
+                                3 answers to choose from.
+                    <br>
+                                You have 15 seconds to click on the answer you believe is correct.
+                
+                </p>
+        </div>
+
+        <div class="parallax-container">
+                <div class="parallax"><img src="assets/images/ducks-team.jpg"></div>
+                <div class='container' id="gameBox">
+                        <button class='btn btn-primary' id='startBtn'>Start</button>
+                        
+                        <div id='timeLeft'></div>
+                        <div id='currentQuestion'></div>
+                        <div class='question'></div>
+                        <div class='answerList'></div>
+                
+                        <div id='message'></div>
+                        <div id='correctedAnswer'></div>
+                        <div id='winPic'></div>
+                        <div id='nopePic'></div>
+                        
+                        <div id='finalMessage'></div>
+                        <br>
+                        <div id='correctAnswers'></div>
+                        <br>
+                        <div id='incorrectAnswers'></div>
+                        <br>
+                        <div id='unanswered'></div>
+                        <br>
+                         <div id='startOverBtn'></div>
+                        
+                    </div>
+            </div>
+
+        
+        
+
+              
+
+
+    <!-- <header>
         <img id="ducksPic" src="https://vignette.wikia.nocookie.net/disney/images/2/29/The_Might_Ducks_Logo.png/revision/latest?cb=20141202203815" alt="The Mighty Ducks and a hockey mask" class="img-thumbnail">
     </header>
     <div class='container'>
@@ -30,9 +82,19 @@
         <div id='incorrectAnswers'></div>
         <div id='unanswered'></div>
         <div id='startOverBtn'></div>
-    </div>
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script type="text/javascript" src="assets/javascript/apps.js"></script>
+    </div> -->
+
+    <!--Bootstrap-->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+       <!--Materialize-->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+       <!--app.js-->
+       <script src="assets/javascript/apps.js"></script>
 </body>
 
 </html>

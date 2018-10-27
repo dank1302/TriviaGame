@@ -1,3 +1,10 @@
+
+
+//for parallax effect
+$('.parallax').parallax();
+
+
+
 var triviaQuestions = [{
 	question: "What is the name of the actor that played Charlie Conway?",
 	answerList: [" Robert Dinero ", " Clint Eastwood ", " Joshua Jackson "],
@@ -26,10 +33,11 @@ var triviaQuestions = [{
 }];
 
 
+
 var currentQuestion; var correctAnswer; var incorrectAnswer; var unanswered; var seconds; var time; var answered; var userSelect;
 var messages = {
 	correct: "Quack! Quack! Quack! That's right!",
-	incorrect: "Nope... cake eater.",
+	incorrect: "Nope... ",
 	endTime: "Out of time!",
 	finished: "Alright! Let's see how you did."
 }
@@ -38,6 +46,7 @@ $('#startBtn').on('click', function(){
 	$(this).hide();
 	newGame();
 });
+
 
 $('#startOverBtn').on('click', function(){
 	$(this).hide();
@@ -116,7 +125,7 @@ function answerPage(){
         incorrectAnswer++;
 		$('#message').html(messages.incorrect);
         $('#correctedAnswer').html('The correct answer was: ' + rightAnswerText);
-        $('#nopePic').html('<img src="http://www.snakkle.com/wp-content/uploads/2012/10/brandon-adams-mighty-ducks-movie-1992-photo-GC.jpg" alt="ducks player with look of disdain" class="img-thumbnail" height ="400px" width = "400px">');
+        $('#nopePic').html('<img src="http://1.bp.blogspot.com/-sg9rluM-OLQ/UZG3apGV5jI/AAAAAAAABXA/NtpJGbXUXEg/s1600/Cake.jpg" alt="ducks player with look of disdain" class="img-thumbnail">');
 	} else{
 		unanswered++;
 		$('#message').html(messages.endTime);
@@ -143,7 +152,8 @@ function scoreboard(){
 	$('#correctAnswers').html("Correct Answers: " + correctAnswer);
 	$('#incorrectAnswers').html("Incorrect Answers: " + incorrectAnswer);
 	$('#unanswered').html("Unanswered: " + unanswered);
-	$('#startOverBtn').addClass('reset');
+	$('#startOverBtn').html('Play Again? Click Here')
 	$('#startOverBtn').show();
-	$('#startOverBtn').html('Start Over?');
+	$('#startOverBtn').addClass('reset');
+	
 }

@@ -8,3 +8,61 @@
     margin-top:50px;
     margin-left:500px;
 }
+.parallax-container {
+    height: 800px;
+  }
+  .jumbotron{
+      margin-top:100px;
+      margin-left: 100px;
+      margin-right: 100px;
+  }
+  #gameBox{
+      margin-top:100px;
+  }
+  h1{
+      margin-left:350px;
+  }
+  .lead{
+      margin-left: 350px;
+  }
+  .question{
+      color: #ffffff;
+  }
+  .answerList{
+      color: #ffffff;
+      text-shadow: 1px 1px #000;
+  }
+  #currentQuestion{
+      color: #ffffff;
+  }
+  #timeLeft{
+      color: #ffffff;
+  }
+  #message{
+      color: #ffffff;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+  #correctedAnswer{
+      color: #ffffff;
+      margin-bottom: 20px;
+  }
+  #nopePic{
+      height: 200px;
+  }
+  #finalMessage{
+      color: #ffffff;
+  }
+  #correctAnswers{
+      color: #ffffff;
+  }
+  #incorrectAnswers{
+      color: #ffffff;
+  }
+  #unanswered{
+      color: #ffffff;
+  }
+  #startOverBtn{
+      color: #ffffff;
+      
+  }
